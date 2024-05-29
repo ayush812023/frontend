@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-left: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(204, 243, 243);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.box, .chart-container, .bar-chart {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.search-box input, .select1, .Select-box2, #monthselect {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    background-color: #ffeb3b;
+    margin-top: 22px;
+}
+
+th, td {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.page btn {
+    color: white;
+    background-color: antiquewhite;
+}
+button {
+    border: 0;
+    background-color: rgb(204, 243, 243);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(104, 122, 122);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    table, th, td {
+        font-size: 10px;
+    }
+}
